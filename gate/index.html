@@ -1,1 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+        }
+
+        header {
+            background: #1e293b;
+            padding: 15px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h2 {
+            font-size: 36px;
+        }
+
+        .hero p {
+            margin-top: 10px;
+            color: #cbd5f5;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #38bdf8;
+            border: none;
+            color: black;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 40px 20px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #1e293b;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Arunkumar</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Hello, I'm Arunkumar 👋</h2>
+    <p>IT Student | Full Stack Developer | Problem Solver</p>
+    <button class="btn">Download Resume</button>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am a passionate IT student learning Java, React, and Full Stack Development. I love building real-world projects and solving problems.</p>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+        <div class="card">
+            <h3>Smart Solar House</h3>
+            <p>A system to run home appliances using solar energy.</p>
+        </div>
+
+        <div class="card">
+            <h3>Alumni App</h3>
+            <p>A platform to connect college alumni and students.</p>
+        </div>
+
+        <div class="card">
+            <h3>Gate Management System</h3>
+            <p>Smart entry system for campus security.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: your@email.com</p>
+    <p>LinkedIn: linkedin.com/in/yourprofile</p>
+</section>
+
+<footer>
+    <p>© 2026 Arunkumar | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
